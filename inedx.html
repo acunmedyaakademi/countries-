@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ülkeler</title>
+  <link rel="stylesheet" href="assets/css/ulke.css">
+  <script src="assets/js/ulke.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="countryHeader">
+      <h1>Ülkeler</h1>
+      <button id="addCountryBtn">Ekle</button>
+    </header>
+    <button id="addData">Örnek Tablo İçin Tıklayınız</button>
+
+    <div class="countries" id="countryContainer">
+      <table id="country">
+
+      </table>
+
+    </div>
+  </div>
+
+
+  <dialog id="modal">
+    <form class="countryForm" method="dialog" id="addCountryForm">
+      <label for="countryName">Ülke Giriniz</label>
+      <input type="text" name="countryName">
+      <label for="population">Nüfus Giriniz</label>
+      <input type="number" name="population">
+      <label for="flag">Bayrak Giriniz</label>
+      <input type="text" name="flag">
+      <label for="famousFood">Meşhur Yemek Giriniz</label>
+      <input type="text" name="famousFood">
+      <label for="capitalCity">Başkent Giriniz</label>
+      <input type="text" name="capitalCity">
+      <p><button class="modelAddNew">Ekle</button> <button class="modelEdit">Kaydet</button> <button type="button"
+          onclick="addCountryForm.reset();modal.close();">Vazgeç</button></p>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+</body>
+
+</html>
